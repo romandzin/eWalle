@@ -126,6 +126,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/offer"
+        android:onClick="moveToMainScreen"
         />
 
     <Button
@@ -141,6 +142,7 @@
         android:textSize="16sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sign_in_button" />
+        app:layout_constraintTop_toBottomOf="@id/sign_in_button"
+        android:onClick="moveToMainScreen"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

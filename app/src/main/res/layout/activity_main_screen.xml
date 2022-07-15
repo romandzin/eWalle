@@ -2,8 +2,130 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainScreenActivity">
+
+    <include
+        layout="@layout/main_screen_toolbar"/>
+
+    <TextView
+        android:id="@+id/account_overview_text"
+        android:layout_width="137dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/account_overview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"
+        android:textColor="@color/main_screen_text_color"
+        android:fontFamily="@font/avenir_next"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintStart_toStartOf="@id/account_overview_text"
+        app:layout_constraintTop_toBottomOf="@id/account_overview_text"
+        android:background="@drawable/wallet_background">
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="80dp"
+            android:layout_height="37dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:text="20,000"
+            android:fontFamily="@font/avenir_next"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="19dp"
+            app:layout_constraintStart_toStartOf="@id/balance"
+            app:layout_constraintTop_toBottomOf="@id/balance"
+            android:layout_marginTop="8dp"
+            android:text="@string/current_balance"
+            android:fontFamily="@font/avenir_next"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/balance_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="25dp"
+            android:drawableStart="@drawable/plus"
+            android:paddingStart="18dp"
+            style="@style/balanceButton"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/send_money_text"
+        android:layout_width="137dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="280dp"
+        android:text="@string/send_money"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"
+        android:textColor="@color/main_screen_text_color"
+        android:fontFamily="@font/avenir_next"/>
+
+    <Button
+        android:id="@+id/add_people_button"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginStart="25dp"
+        android:drawableStart="@drawable/plus"
+        android:paddingStart="20dp"
+        style="@style/balanceButton"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/send_money_text"
+        />
+
+    <ImageButton
+        android:src="@drawable/sendmoney"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/send_money_text"
+        android:layout_marginEnd="25dp"/>
+
+    <TextView
+        android:id="@+id/services_text"
+        android:layout_width="137dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="516dp"
+        android:fontFamily="@font/avenir_next"
+        android:text="@string/services"
+        android:textColor="@color/main_screen_text_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:src="@drawable/setting"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/services_text"
+        android:layout_marginEnd="25dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

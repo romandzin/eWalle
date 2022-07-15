@@ -10,4 +10,6 @@
     <color name="date_text_color">#7B7F9E</color>
     <color name="dark_text_color">#1B1D28</color>
     <color name="sign_in_button_color">#FFAC30</color>
+    <color name="main_screen_text_color">#3A4276</color>
+    <color name="grey_background_color">#F1F3F6</color>
 </resources>

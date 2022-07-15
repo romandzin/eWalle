@@ -9,5 +9,8 @@
        \nJoin For Free.</string>
     <string name="sign_in_button">Sign in</string>
     <string name="create_account_button">Create an account</string>
-
+    <string name="account_overview">Account Overview</string>
+    <string name="send_money">Send Money</string>
+    <string name="services">Services</string>
+    <string name="current_balance">Current balance</string>
 </resources>
