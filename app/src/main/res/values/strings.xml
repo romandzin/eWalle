@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">eWalle</string>
+    <string name="image_description">Geometric design</string>
+    <string name="clock">06:20 PM</string>
+    <string name="temperature">34°C</string>
+    <string name="date">Nov.10.2020 | Wednesday</string>
+    <string name="main_name">eWalle</string>
+    <string name="offer">Open An Account For Digital E-Wallet Solutions.Instant Payouts. \n \n
+       \nJoin For Free.</string>
+    <string name="sign_in_button">Sign in</string>
+    <string name="create_account_button">Create an account</string>
+
+</resources>

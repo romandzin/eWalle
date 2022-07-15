@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/geometric_design"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image_description"
+        android:scaleType="fitStart"
+        android:src="@drawable/geometric_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="159dp"
+        android:fontFamily="@font/avenir_next"
+        android:text="@string/clock"
+        android:textColor="@color/dark_text_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@id/cloud"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cloud"
+        android:layout_width="18dp"
+        android:layout_height="13dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/vector_cloud"
+        app:layout_constraintEnd_toStartOf="@id/temperature"
+        app:layout_constraintTop_toTopOf="@id/temperature" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/temperature"
+        android:fontFamily="@font/avenir_next"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/clock"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="62dp"
+        android:text="@string/date"
+        android:fontFamily="@font/avenir_next"
+        android:textColor="@color/date_text_color"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/clock"
+        app:layout_constraintTop_toBottomOf="@id/clock" />
+
+
+    
+    
+    <ImageView
+        android:id="@+id/ewalle_icon"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="160dp"
+        android:src="@drawable/ewalle_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date" />
+
+    <TextView
+        android:id="@+id/main_name"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@id/ewalle_icon"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/avenir_next"
+        android:text="@string/main_name"
+        android:textColor="@color/dark_text_color"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@id/ewalle_icon"
+        app:layout_constraintTop_toBottomOf="@id/ewalle_icon" />
+
+    <TextView
+        android:id="@+id/offer"
+        android:layout_width="189dp"
+        android:layout_height="110dp"
+        android:layout_alignTop="@id/main_name"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/avenir_next"
+        android:text="@string/offer"
+        android:textColor="@color/date_text_color"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/main_name"
+        app:layout_constraintTop_toBottomOf="@id/main_name" />
+
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="32dp"
+        android:drawableEnd="@drawable/arrow"
+        style="@style/signInButtonStyle"
+        android:paddingEnd="60dp"
+        android:paddingStart="50dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="@string/sign_in_button"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offer"
+        />
+
+    <Button
+        style="@style/createAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/avenir_next_light"
+        android:text="@string/create_account_button"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_text_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
