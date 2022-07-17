@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/service_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/wallet_background" />
+
+    <TextView
+        android:id="@+id/service_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="10sp"
+        android:textColor="@color/main_screen_text_color"
+        android:fontFamily="@font/avenir_next_light"
+        android:gravity="center"/>
+
+</LinearLayout>

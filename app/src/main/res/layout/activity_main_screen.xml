@@ -98,6 +98,20 @@
         app:layout_constraintTop_toBottomOf="@id/send_money_text"
         />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/people_recyclerview"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/add_people_button"
+        app:layout_constraintTop_toBottomOf="@id/send_money_text"
+        tools:listitem="@layout/people_recyclerview_item"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="97dp"/>
+
     <ImageButton
         android:src="@drawable/sendmoney_icon"
         android:background="@color/white"
@@ -112,13 +126,31 @@
         android:layout_width="137dp"
         android:layout_height="25dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="516dp"
+        android:layout_marginTop="488dp"
         android:fontFamily="@font/avenir_next"
         android:text="@string/services"
         android:textColor="@color/main_screen_text_color"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/services_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/services_text"
+        app:layout_constraintVertical_bias="0.111"
+        app:spanCount="2"
+        tools:itemCount="8"
+        tools:listitem="@layout/services_recyclerview_item" />
 
     <ImageButton
         android:src="@drawable/services_icon"
