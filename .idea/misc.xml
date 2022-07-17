@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/arrow.xml" value="0.275" />
         <entry key="app/src/main/res/drawable/button_without_background.xml" value="0.2475" />
         <entry key="app/src/main/res/drawable/main_screen_toolbar.xml" value="0.3225" />
         <entry key="app/src/main/res/drawable/round_button.xml" value="0.2475" />
+        <entry key="app/src/main/res/drawable/services_icon.xml" value="0.275" />
         <entry key="app/src/main/res/drawable/wallet_background.xml" value="0.3225" />
         <entry key="app/src/main/res/font-v26/avenir_next.xml" value="0.25925925925925924" />
         <entry key="app/src/main/res/font/avenir_next.xml" value="0.25925925925925924" />

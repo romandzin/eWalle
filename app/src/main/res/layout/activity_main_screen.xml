@@ -99,7 +99,8 @@
         />
 
     <ImageButton
-        android:src="@drawable/sendmoney"
+        android:src="@drawable/sendmoney_icon"
+        android:background="@color/white"
         android:layout_width="24dp"
         android:layout_height="24dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +121,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:src="@drawable/setting"
+        android:src="@drawable/services_icon"
+        android:background="@color/white"
         android:layout_width="24dp"
         android:layout_height="24dp"
         app:layout_constraintEnd_toEndOf="parent"
