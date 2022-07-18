@@ -35,5 +35,10 @@
         <item name="theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
     </style>
 
+    <style name="CheckedMenuItem">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:drawableStart">@drawable/checked_pointer</item>
+    </style>
+
 
 </resources>
