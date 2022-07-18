@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:textSize="10sp"
-        android:textColor="@color/main_screen_text_color"
+        android:textColor="?attr/colorSecondary"
         android:fontFamily="@font/avenir_next_light"
         android:gravity="center"/>
 

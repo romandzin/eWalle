@@ -31,7 +31,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginTop="14dp"
         android:text="@string/main_name"
-        android:textColor="@color/dark_text_color"
+        android:textColor="?attr/colorPrimaryVariant"
         app:layout_constraintStart_toEndOf="@id/ewalle_icon_toolbar"
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="28sp" />
@@ -44,7 +44,7 @@
             android:layout_marginTop="22dp"
             android:layout_marginEnd="25dp"
             android:src="@drawable/navbar_icon"
-            android:background="@color/white"
+            android:background="?attr/colorPrimary"
             android:onClick="openNavBar"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.appcompat.widget.Toolbar>

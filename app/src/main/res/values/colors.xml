@@ -12,4 +12,7 @@
     <color name="sign_in_button_color">#FFAC30</color>
     <color name="main_screen_text_color">#3A4276</color>
     <color name="grey_background_color">#F1F3F6</color>
+    <color name="sign_in_color">#212330</color>
+
+    <color name="dark_background">#E5E5E5</color>
 </resources>

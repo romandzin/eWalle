@@ -13,7 +13,7 @@
         android:layout_gravity="end"
         app:itemTextColor="@color/checked_item_color"
         app:headerLayout="@layout/navigation_view"
-        android:background="@color/grey_background_color"
+        android:background="?attr/backgroundColor"
         app:itemBackground="@drawable/button_without_background"
         app:menu="@menu/navigation_menu"
         android:fitsSystemWindows="true" >
@@ -28,7 +28,7 @@
             android:textAllCaps="false"
             android:textSize="16sp"
             android:fontFamily="@font/avenir_next"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorPrimaryDark"
             android:layout_marginStart="18dp"
             android:layout_marginBottom="100dp"/>
         
@@ -40,7 +40,7 @@
             android:layout_marginBottom="50dp"
             android:text="@string/version"
             android:textSize="10sp"
-            android:textColor="@color/main_screen_text_color"/>
+            android:textColor="?attr/colorSecondary"/>
     </com.google.android.material.navigation.NavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

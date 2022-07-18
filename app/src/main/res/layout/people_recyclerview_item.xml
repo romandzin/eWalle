@@ -42,7 +42,7 @@
         android:layout_marginTop="17dp"
         android:textSize="12sp"
         android:fontFamily="@font/avenir_next_light"
-        android:textColor="@color/main_screen_text_color"
+        android:textColor="?attr/colorSecondary"
         android:gravity="center"/>
 
 </LinearLayout>
