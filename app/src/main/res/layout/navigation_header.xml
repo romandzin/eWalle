@@ -30,8 +30,7 @@
             app:layout_constraintStart_toStartOf="@id/icon_background"
             app:layout_constraintBottom_toBottomOf="@id/icon_background"
             app:layout_constraintEnd_toEndOf="@id/icon_background"
-            app:layout_constraintTop_toTopOf="@id/icon_background"
-            android:src="@drawable/woman_icon" />
+            app:layout_constraintTop_toTopOf="@id/icon_background" />
 
         <TextView
             android:id="@+id/account_name"
@@ -43,8 +42,7 @@
             android:layout_marginTop="30dp"
             android:textColor="?attr/colorPrimaryDark"
             android:fontFamily="@font/avenir_next"
-            android:layout_marginStart="10dp"
-            android:text="Carol Black"/>
+            android:layout_marginStart="10dp" />
 
         <TextView
             android:id="@+id/account_place"
@@ -55,8 +53,7 @@
             app:layout_constraintTop_toBottomOf="@id/account_name"
             android:layout_marginStart="10dp"
             android:textColor="?attr/colorOnPrimary"
-            android:fontFamily="@font/avenir_next"
-            android:text="Seattle, Washington"/>
+            android:fontFamily="@font/avenir_next" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageButton

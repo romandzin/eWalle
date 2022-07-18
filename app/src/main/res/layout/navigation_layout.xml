@@ -5,42 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_gravity="end"
-        app:itemTextColor="@color/checked_item_color"
-        app:headerLayout="@layout/navigation_view"
-        android:background="?attr/backgroundColor"
-        app:itemBackground="@drawable/button_without_background"
-        app:menu="@menu/navigation_menu"
-        android:fitsSystemWindows="true" >
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/turnoff_services"
-            android:text="@string/logout"
-            android:layout_gravity="bottom"
-            android:background="@drawable/button_without_background"
-            android:textAllCaps="false"
-            android:textSize="16sp"
-            android:fontFamily="@font/avenir_next"
-            android:textColor="?attr/colorPrimaryDark"
-            android:layout_marginStart="18dp"
-            android:layout_marginBottom="100dp"/>
-        
-        <TextView
-            android:layout_width="68dp"
-            android:layout_height="15dp"
-            android:layout_gravity="bottom"
-            android:layout_marginStart="18dp"
-            android:layout_marginBottom="50dp"
-            android:text="@string/version"
-            android:textSize="10sp"
-            android:textColor="?attr/colorSecondary"/>
-    </com.google.android.material.navigation.NavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

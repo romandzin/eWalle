@@ -14,9 +14,9 @@ class PeopleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
     val people_name = itemView.findViewById<TextView>(R.id.people_name)
 }
 
-data class People(var people_icon: Drawable, var people_name: String)
+data class Person(var person_icon: Drawable, var person_name: String)
 
-class PeopleRecyclerAdapter(private val peopleList: List<People>): RecyclerView.Adapter<PeopleViewHolder>() {
+class PeopleRecyclerAdapter(private val peopleList: MutableList<Person>): RecyclerView.Adapter<PeopleViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PeopleViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.people_recyclerview_item, parent, false)
@@ -27,8 +27,8 @@ class PeopleRecyclerAdapter(private val peopleList: List<People>): RecyclerView.
     override fun onBindViewHolder(holder: PeopleViewHolder, position: Int) {
         val peopleListItem = peopleList[position]
 
-        holder.people_icon.setImageDrawable(peopleListItem.people_icon)
-        holder.people_name.text = peopleListItem.people_name
+        holder.people_icon.setImageDrawable(peopleListItem.person_icon)
+        holder.people_name.text = peopleListItem.person_name
     }
 
     override fun getItemCount(): Int {
